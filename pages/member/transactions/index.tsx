@@ -1,4 +1,6 @@
+/* eslint-disable linebreak-style */
 import React from 'react';
+import Image from 'next/image';
 
 function Transactions() {
   return (
@@ -6,7 +8,7 @@ function Transactions() {
       <section className="sidebar">
         <div className="content pt-50 pb-30 ps-30">
           <div className="user text-center pb-50 pe-30">
-            <img src="/img/avatar-1.png" width="90" height="90" className="img-fluid mb-20" />
+            <Image src="/img/avatar-1.png" width="90" height="90" className="img-fluid mb-20" alt="" />
             <h2 className="fw-bold text-xl color-palette-1 m-0">Shayna Anne</h2>
             <p className="color-palette-2 m-0">shayna@anne.com</p>
           </div>
@@ -310,7 +312,7 @@ function Transactions() {
                           The New
                           Battle 2021
 
-                                            </p>
+                        </p>
                         <p className="text-xs fw-normal text-start color-palette-2 m-0">Desktop</p>
                       </div>
                     </th>
@@ -325,7 +327,7 @@ function Transactions() {
                         <span className="float-start icon-status pending" />
                         <p className="fw-medium text-start color-palette-1 m-0 position-relative">
                           Pending
-                                            </p>
+                        </p>
                       </div>
                     </td>
                     <td>
@@ -352,7 +354,7 @@ function Transactions() {
                           Call of
                           Duty:Modern
 
-                                            </p>
+                        </p>
                         <p className="text-xs fw-normal text-start color-palette-2 m-0">Desktop</p>
                       </div>
                     </th>
@@ -367,7 +369,7 @@ function Transactions() {
                         <span className="float-start icon-status success" />
                         <p className="fw-medium text-start color-palette-1 m-0 position-relative">
                           Success
-                                            </p>
+                        </p>
                       </div>
                     </td>
                     <td>
@@ -394,7 +396,7 @@ function Transactions() {
                           Clash of
                           Clans
 
-                                            </p>
+                        </p>
                         <p className="text-xs fw-normal text-start color-palette-2 m-0">Mobile</p>
                       </div>
                     </th>
@@ -409,7 +411,7 @@ function Transactions() {
                         <span className="float-start icon-status failed" />
                         <p className="fw-medium text-start color-palette-1 m-0 position-relative">
                           Failed
-</p>
+                        </p>
                       </div>
                     </td>
                     <td>
@@ -436,7 +438,7 @@ function Transactions() {
                           The Royal
                           Game
 
-                                            </p>
+                        </p>
                         <p className="text-xs fw-normal text-start color-palette-2 m-0">Mobile</p>
                       </div>
                     </th>
@@ -451,7 +453,7 @@ function Transactions() {
                         <span className="float-start icon-status pending" />
                         <p className="fw-medium text-start color-palette-1 m-0 position-relative">
                           Pending
-                                            </p>
+                        </p>
                       </div>
                     </td>
                     <td>

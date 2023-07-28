@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unknown-property */
+/* eslint-disable linebreak-style */
 import React from 'react';
 
 function SignUp() {

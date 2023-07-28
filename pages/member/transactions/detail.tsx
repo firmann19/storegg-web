@@ -1,4 +1,6 @@
+/* eslint-disable linebreak-style */
 import React from 'react';
+import Image from 'next/image';
 
 function TransactionsDetail() {
   return (
@@ -6,7 +8,7 @@ function TransactionsDetail() {
       <section className="sidebar">
         <div className="content pt-50 pb-30 ps-30">
           <div className="user text-center pb-50 pe-30">
-            <img src="/img/avatar-1.png" width="90" height="90" className="img-fluid mb-20" />
+            <Image src="/img/avatar-1.png" width="90" height="90" className="img-fluid mb-20" alt="" />
             <h2 className="fw-bold text-xl color-palette-1 m-0">Shayna Anne</h2>
             <p className="color-palette-2 m-0">shayna@anne.com</p>
           </div>
@@ -290,7 +292,7 @@ function TransactionsDetail() {
                       className="purchase-details"
                     >
                       masayoshizero
-</span>
+                    </span>
 
                   </p>
                   <p className="text-lg color-palette-1 mb-20">
@@ -300,7 +302,7 @@ function TransactionsDetail() {
                       className="purchase-details"
                     >
                       #GG001
-</span>
+                    </span>
 
                   </p>
                   <p className="text-lg color-palette-1 mb-20">
@@ -337,7 +339,7 @@ function TransactionsDetail() {
                     >
                       Rp
                       55.000.600
-</span>
+                    </span>
 
                   </p>
                 </div>
@@ -351,7 +353,7 @@ function TransactionsDetail() {
                     >
                       Masayoshi
                       Angga Zero
-</span>
+                    </span>
 
                   </p>
                   <p className="text-lg color-palette-1 mb-20">
@@ -369,7 +371,7 @@ function TransactionsDetail() {
                       className="payment-details"
                     >
                       Mandiri
-</span>
+                    </span>
 
                   </p>
                   <p className="text-lg color-palette-1 mb-20">
@@ -380,7 +382,7 @@ function TransactionsDetail() {
                     >
                       PT Store GG
                       Indonesia
-</span>
+                    </span>
 
                   </p>
                   <p className="text-lg color-palette-1 mb-20">
