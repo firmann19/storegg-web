@@ -1,14 +1,13 @@
 /* eslint-disable linebreak-style */
 import React from 'react';
-import Image from 'next/image';
 import SideBar from '../../../components/organism/SideBar';
-import OverviewContent from '../../../components/organism/OverviewContent';
+import TransactionContent from '../../../components/organism/TransactionContent';
 
 function Transactions() {
   return (
     <section className="transactions overflow-auto">
       <SideBar />
-      <OverviewContent />
+      <TransactionContent />
     </section>
   );
 }
