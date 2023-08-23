@@ -1,35 +1,33 @@
 /* eslint-disable linebreak-style */
-import React from 'react';
-
 interface TopUpItemProps {
-    type: 'dekstop' | 'mobile';
-    data: {
+  type: 'desktop' | 'mobile';
+  data: {
+    name: string;
+    thumbnail: string;
+    category: {
       name: string;
-      thumbnail: string;
-      category: {
-        name: string;
-      }
     }
+  }
 }
-
-function TopUpItem(props: TopUpItemProps) {
+export default function TopUpItem(props: TopUpItemProps) {
   const { type, data } = props;
 
   const ROOT_IMG = process.env.NEXT_PUBLIC_IMG;
 
-  if (type === 'dekstop') {
-    <div className="pb-50 d-md-block d-none">
-      <h2 className="text-4xl fw-bold color-palette-1 text-start mb-10 mt-10">
-        {data.name}
-      </h2>
-      <p className="text-lg color-palette-2 mb-0">
-        Category:
-        {' '}
-        {data.category.name}
-      </p>
-    </div>;
+  if (type === 'desktop') {
+    return (
+      <div className="pb-50 d-md-block d-none">
+        <h2 className="text-4xl fw-bold color-palette-1 text-start mb-10 mt-10">
+          {data.name}
+        </h2>
+        <p className="text-lg color-palette-2 mb-0">
+          Category:
+          {' '}
+          {data.category.name}
+        </p>
+      </div>
+    );
   }
-
   return (
     <div className="row align-items-center">
       <div className="col-md-12 col-4">
@@ -48,5 +46,3 @@ function TopUpItem(props: TopUpItemProps) {
     </div>
   );
 }
-
-export default TopUpItem;

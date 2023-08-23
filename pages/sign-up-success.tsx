@@ -1,4 +1,5 @@
 /* eslint-disable linebreak-style */
+import Link from 'next/link';
 import React from 'react';
 
 function SignUpSuccess() {
@@ -194,15 +195,15 @@ function SignUpSuccess() {
           </p>
         </div>
         <div className="button-group d-flex flex-column mx-auto">
-          <a
+          <Link
             className="btn btn-top-up fw-medium text-lg text-white rounded-pill"
-            href="../index.html"
+            href="/sign-in"
             role="button"
           >
             Top
             Up
 
-          </a>
+          </Link>
         </div>
       </div>
     </section>
