@@ -1,4 +1,5 @@
 /* eslint-disable linebreak-style */
+import Link from 'next/link';
 import React from 'react';
 
 function CompleteCheckout() {
@@ -239,18 +240,18 @@ function CompleteCheckout() {
           </p>
         </div>
         <div className="button-group d-flex flex-column mx-auto">
-          <a
+          <Link
             className="btn btn-dashboard fw-medium text-lg text-white rounded-pill mb-16"
-            href="../member/overview.html"
+            href="/member"
             role="button"
           >
             My
             Dashboard
 
-          </a>
+          </Link>
           <a
             className="btn btn-whatsapp fw-medium text-lg color-palette-1 rounded-pill"
-            href="#"
+            href="https://wa.me/6285174130891?text=Saya%20sudah%20melakukan%20pembayaran"
             role="button"
           >
             WhatsApp

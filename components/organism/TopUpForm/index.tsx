@@ -4,6 +4,7 @@ import { useRouter } from 'next/router';
 import { toast } from 'react-toastify';
 import NominalItem from './NominalItem';
 import PaymentItem from './PaymentItem';
+import { BanksTypes, NominalsTypes, PaymentTypes } from '../../../services/data-types';
 
 interface TopUpFormProps {
   nominals: NominalsTypes[];

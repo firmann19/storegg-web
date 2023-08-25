@@ -25,6 +25,7 @@ function Detail() {
     const data = await getDetailVoucher(id);
     console.log('data:', data);
     setDataItem(data.item);
+    localStorage.setItem('data-item', JSON.stringify(data.detail));
     setNominals(data.detail.nominals);
     setPayments(data.payment);
   }, []);

@@ -13,7 +13,7 @@ function Checkout() {
             <div className="container-fluid">
                 <div className="logo text-md-center text-start pb-50">
                     <a className="" href="#">
-                    <Image src="/icon/logo.svg" width={60} height={60} alt="logo" />
+                        <Image src="/icon/logo.svg" width={60} height={60} alt="logo" />
                     </a>
                 </div>
                 <div className="title-text pt-md-50 pt-0">
@@ -27,6 +27,30 @@ function Checkout() {
             </div>
         </section>
   );
+}
+
+interface GetServerSideProps {
+    req: {
+        cookies: {
+            token: string;
+        }
+    }
+}
+
+export async function getServerSideProps({ req }: GetServerSideProps) {
+  const { token } = req.cookies;
+  if (!token) {
+    return {
+      redirect: {
+        destination: '/sign-in',
+        permanent: false,
+      },
+    };
+  }
+
+  return {
+    props: {},
+  };
 }
 
 export default Checkout;

@@ -1,7 +1,7 @@
 /* eslint-disable linebreak-style */
 import Link from 'next/link';
 import React, { useState } from 'react';
-import { toast, ToastContainer } from 'react-toastify';
+import { toast } from 'react-toastify';
 import { useRouter } from 'next/router';
 import Cookies from 'js-cookie';
 import { setLogin } from '../../../services/auth';
@@ -86,7 +86,6 @@ function SignInForm(): React.JSX.Element {
 
         </Link>
       </div>
-      <ToastContainer />
     </>
   );
 }

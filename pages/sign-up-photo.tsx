@@ -1,7 +1,7 @@
 /* eslint-disable linebreak-style */
 import React, { useCallback, useEffect, useState } from 'react';
 import Image from 'next/image';
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import { useRouter } from 'next/router';
 import { getGameCategory } from '../services/player';
 import { setSignUp } from '../services/auth';
@@ -129,7 +129,6 @@ function SignUpPhoto() {
           </div>
         </form>
       </div>
-      <ToastContainer />
     </section>
   );
 }
